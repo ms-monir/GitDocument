@@ -125,3 +125,4 @@ first of all (fork) korte hobe than start work
 ->git status
 ->git add .
 ->git commit -m ""
+->git push origin main
