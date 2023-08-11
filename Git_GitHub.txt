@@ -1,0 +1,127 @@
+++Create git ripository (Locally)
+
+--create folder
+->cd Desktop
+->mkdir gitFolder (create folder)
+->cd gitFolder
+->git init
+->touch first.txt (create file)
+
+------------------------------------------
+->git status (any change folder check in this command)
+->git add first.txt(staging or trag)
+->git status(check staging)
+->git commit 
+->git config --global user.name "ms-monir"
+->git config --global user.email "ms.monirul8579@gmail.com"
+->git commit
+Than open new window its called vim
+
+-> first press (i) than write message 
+for example -- created a new file first.txt and add some line than press (Esc)
+than press(:x)
+
+->git log(check first commit )
+----------------------------------------
+another text file re write and commit
+->git status()
+->git add .
+->git status
+->git commit -m "we have aonther line to our first text file"
+->git status
+->git log(amra koita commit korechi ata dekhabe)
+->git log --oneline(amra jodi chotovabe dekhte chai commit goloke)
+------------First tutorial-------------------------------------end--------
+
+
+
+Advanched Fiture---
+
+->touch second.txt(create file)and write message
+->git status
+->git add .
+->git commit -m "we have created new file"
+->git log
+->git log --oneline
+
+--check commit if you want??
+->git show (6dced9d) commit id
+----------------------------------------
+
+Now we are going to learn about diff command.....
+->git status
+->git diff
+->git add .
+->git diff(don't work)
+->git diff --staged(worked)
+->git diff(don't worked)
+->git commit -m "we added one line adn remove one line"
+->git log --oneline
+
+check difference between two commites
+->git diff f04327a 5ae5ef8
+
+remove file from git
+->git rm second.txt
+->git status
+->git commit -m "Delete second.txt"
+->git status
+------------------------------
+->git status
+->git add .
+->git commit -m "we have add two line in first.txt file"
+->git log --oneline
+->git checkout bc6df10 first.txt(back version one(any version you want))
+->git chekcout c1e3aa8 first.txt(ager jagai back korbe)
+
+--------------------------------------------------------------------------
+
+Online__
+Create repository than
+-> git clone (repository link) you want use folder name or same(myProjects)
+->cd myProjects
+->touch Hello.java(create java file)
+->code .(open vs code)
+->git status
+->git add .
+->git commit -m "added hello.java"
+->git status
+->git remote add origin https://github.com/ms-monir/gitOnline.git
+->git push -u origin main
+add another code in this file than
+->git add .
+->git commit -m "added new mehtod called display hello.java"
+->git push origin main
+----------------------------------------------------------------
+Branch in git for all 
+
+->git branch(check branch)
+->git branch branchA (create branch)
+->git branch
+->git branch branchB
+->git checkout branchA (change branch) and write something
+->git status
+->git add .
+->git commit -m "change something branchA"
+->git checkout main (don't change code )
+->git checkout branchB(and wirte something code)
+->git status
+->git add .
+->git commit -m "change branchB"
+-------------------------------------------------
+
+Merge Conflict in Git
+
+->git branch
+->git merge branchB (main branch er sathe branchB er merge)
+---------------------------------------------------------------
+Fork and Pull Request in Git
+first of all (fork) korte hobe than start work
+
+->git clone (project link) 
+->cd (project folder name)
+->code .
+-> change code or anything you want to change 
+->git status
+->git add .
+->git commit -m ""
